@@ -146,9 +146,15 @@ Use the scoreboard function below to do the following:
 ]  
   */
 
-function scoreboard(/* CODE HERE */) {
-  /* CODE HERE */
-}
+function scoreboard(callbackInningScore, callbackInning, inningNum) {
+  let allInnings = [];
+    for (let i = 1; i < inningNum; i++) {
+      let homeScore = callbackInning();
+      let awayScore = callbackInning(); 
+        allInnings.push(`Inning  ${i}: Home ${homeScore} - Away ${awayScore}`);
+    }
+    return(allInnings);
+  }
 
 
 

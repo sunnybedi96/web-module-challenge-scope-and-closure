@@ -61,6 +61,8 @@ You will be running your tests in one terminal and debugging in the other. As yo
 Edit the `ReadMe` file with your answers to the questions below.
 
 1. In your own words, define closure (1-2 sentences).
+  - Access a parent function scope, from within a child function scope.
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -82,8 +84,11 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+  - newroll() - access
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
 c. What is the lexical scope of `newRoll`? 
+  -       between the {}
+
 
 
 ### Task 3 - Stretch Goals
